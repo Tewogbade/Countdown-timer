@@ -76,16 +76,15 @@ h5 {
 @media (max-width: 576px) {
   body {
     width: 100%;
-    /* margin-top: 5rem; */
   }
   .day,
   .hour,
   .minute,
   .second {
-    width: 3rem;
+    width: 2.5rem;
     font-size: 2rem;
     padding: 1rem 1rem;
-    margin: 5rem 1rem 0;
+    margin: 5rem 10px 0;
     color: hsl(345, 95%, 68%);
     background-color: hsl(236, 21%, 26%);
     border-radius: 5px;
@@ -100,15 +99,14 @@ h5 {
     position: block;
   }
   .img {
-    padding-top: 10rem;
-    height: 15rem;
+    padding-top: rem;
+    height: 10rem;
   }
   .image-icons {
     position: block;
     margin-top: 20rem;
   }
   .links {
-    padding-top: 6rem;
     position: block;
     top: 50%;
     left: 40%;
