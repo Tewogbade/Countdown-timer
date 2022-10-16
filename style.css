@@ -96,18 +96,18 @@ h5 {
     letter-spacing: 1px;
   }
   .image-icons {
-    position: block;
+    position: relative;
   }
   .img {
     padding-top: rem;
     height: 10rem;
   }
   .image-icons {
-    position: block;
+    position: relative;
     margin-top: 20rem;
   }
   .links {
-    position: block;
+    position: absolute;
     top: 50%;
     left: 40%;
   }
@@ -116,6 +116,12 @@ h5 {
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 10px;
+  }
+  #facebook,
+  #pinterest,
+  #instagram {
+    width: 19px;
+    margin: 0 7px;
   }
 }
 @media (min-width: 576px) and (max-width: 1199px) {
