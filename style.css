@@ -76,7 +76,7 @@ h5 {
 @media (max-width: 576px) {
   body {
     width: 100%;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
   }
   .day,
   .hour,
@@ -100,13 +100,15 @@ h5 {
     position: block;
   }
   .img {
-    height: 10rem;
+    padding-top: 10rem;
+    height: 15rem;
   }
   .image-icons {
     position: block;
-    margin-top: 15rem;
+    margin-top: 20rem;
   }
   .links {
+    padding-top: 6rem;
     position: block;
     top: 50%;
     left: 40%;
