@@ -8,7 +8,6 @@ const countDown = () => {
     document.querySelector(".text-time").style.display = "none";
     document.querySelector(".expired").textContent = "TIME HAS EXPIRED!";
   }
-
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
@@ -26,6 +25,5 @@ const countDown = () => {
     textMinute < 10 ? `0${textMinute}` : `${textMinute}`;
   document.querySelector(".second").textContent =
     textSecond < 10 ? `0${textSecond}` : `${textSecond}`;
-  console.log(countDownTime);
 };
 setInterval(countDown, 1000);
