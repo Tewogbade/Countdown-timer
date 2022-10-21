@@ -1,12 +1,13 @@
 "use strict";
-const countDate = new Date("Oct 30 2022 00:00:00").getTime();
+const countDate = new Date("Oct 21 2022 00:00:00").getTime();
 
 const countDown = () => {
   const now = new Date().getTime();
   const countDownTime = countDate - now;
   if (countDownTime <= 1000) {
     document.querySelector(".text-time").style.display = "none";
-    document.querySelector(".expired").textContent = "HAPP BIRTHDAY LABISI!";
+    document.querySelector(".expired").textContent =
+      "HAPPY BIRTHDAY ARAMIDEY!🎉";
   }
   // if (countDownTime <= 1000) {
   //   document.querySelector(".text-time").style.display = "none";
