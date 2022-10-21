@@ -6,8 +6,12 @@ const countDown = () => {
   const countDownTime = countDate - now;
   if (countDownTime <= 1000) {
     document.querySelector(".text-time").style.display = "none";
-    document.querySelector(".expired").textContent = "TIME HAS EXPIRED!";
+    document.querySelector(".expired").textContent = "HAPP BIRTHDAY LABISI!";
   }
+  // if (countDownTime <= 1000) {
+  //   document.querySelector(".text-time").style.display = "none";
+  //   document.querySelector(".expired").textContent = "TIME HAS EXPIRED!";
+  // }
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
