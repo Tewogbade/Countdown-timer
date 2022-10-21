@@ -1,5 +1,5 @@
 "use strict";
-const countDate = new Date("Oct 21 2022 00:00:00").getTime();
+const countDate = new Date("Oct 30 2022 00:00:00").getTime();
 
 const countDown = () => {
   const now = new Date().getTime();
