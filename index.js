@@ -1,18 +1,14 @@
 "use strict";
-const countDate = new Date("Oct 30 2022 00:00:00").getTime();
+const countDate = new Date("Jan 1 2023 00:00:00").getTime();
 
 const countDown = () => {
   const now = new Date().getTime();
   const countDownTime = countDate - now;
+
   if (countDownTime <= 1000) {
     document.querySelector(".text-time").style.display = "none";
-    document.querySelector(".expired").textContent =
-      "HAPPY BIRTHDAY ARAMIDEY!🎉";
+    document.querySelector(".expired").textContent = "TIME HAS EXPIRED!";
   }
-  // if (countDownTime <= 1000) {
-  //   document.querySelector(".text-time").style.display = "none";
-  //   document.querySelector(".expired").textContent = "TIME HAS EXPIRED!";
-  // }
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
