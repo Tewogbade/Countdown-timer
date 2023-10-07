@@ -1,30 +1,35 @@
 "use strict";
-const countDate = new Date("March 15 2023 00:00:00").getTime();
 
-const countDown = () => {
+const countDate = new Date("Dec 22 2023 12:00:00").getTime();
+
+const getElement = (selector) => document.querySelector(selector);
+
+const formatTime = (time) => (time < 10 ? `0${time}` : `${time}`);
+
+const updateCountdown = () => {
   const now = new Date().getTime();
   const countDownTime = countDate - now;
 
   if (countDownTime <= 1000) {
-    document.querySelector(".text-time").style.display = "none";
-    document.querySelector(".expired").textContent = "TIME HAS EXPIRED!";
+    getElement(".text-time").style.display = "none";
+    getElement(".expired").textContent = "TIME HAS EXPIRED!";
+    return;
   }
+
   const second = 1000;
   const minute = second * 60;
   const hour = minute * 60;
   const day = hour * 24;
-  let textDay = Math.floor(countDownTime / day);
-  let textHour = Math.floor((countDownTime % day) / hour);
-  let textMinute = Math.floor((countDownTime % hour) / minute);
-  let textSecond = Math.floor((countDownTime % minute) / second);
 
-  document.querySelector(".day").textContent =
-    textDay < 10 ? `0${textDay}` : `${textDay}`;
-  document.querySelector(".hour").textContent =
-    textHour < 10 ? `0${textHour}` : `${textHour}`;
-  document.querySelector(".minute").textContent =
-    textMinute < 10 ? `0${textMinute}` : `${textMinute}`;
-  document.querySelector(".second").textContent =
-    textSecond < 10 ? `0${textSecond}` : `${textSecond}`;
+  const textDay = Math.floor(countDownTime / day);
+  const textHour = Math.floor((countDownTime % day) / hour);
+  const textMinute = Math.floor((countDownTime % hour) / minute);
+  const textSecond = Math.floor((countDownTime % minute) / second);
+
+  getElement(".day").textContent = formatTime(textDay);
+  getElement(".hour").textContent = formatTime(textHour);
+  getElement(".minute").textContent = formatTime(textMinute);
+  getElement(".second").textContent = formatTime(textSecond);
 };
-setInterval(countDown, 1000);
+
+setInterval(updateCountdown, 1000);
