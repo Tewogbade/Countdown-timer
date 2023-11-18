@@ -12,7 +12,7 @@ const updateCountdown = () => {
 
   if (countDownTime <= 1000) {
     getElement(".text-time").style.display = "none";
-    getElement(".expired").textContent = "TIME HAS EXPIRED!";
+    getElement(".expired").textContent = "MY BABY IS WITH ME! 🥰 ";
     return;
   }
 
