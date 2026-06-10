@@ -1,6 +1,6 @@
 "use strict";
 
-const countDate = new Date("Dec 22 2023 12:00:00").getTime();
+const countDate = new Date("JUNE 24 2026 18:45:00").getTime();
 
 const getElement = (selector) => document.querySelector(selector);
 
@@ -12,7 +12,22 @@ const updateCountdown = () => {
 
   if (countDownTime <= 1000) {
     getElement(".text-time").style.display = "none";
-    getElement(".expired").textContent = "MY BABY IS WITH ME! 🥰 ";
+
+    getElement(".expired").innerHTML = `
+      <p>My Baby Is With Me! 🥰</p>
+  
+      <p style="font-size: 0.9rem; max-width: 700px; margin: 20px auto; line-height: 1.7;">
+        For weeks I've been counting down to this moment. Not because I wanted a date on a calendar to arrive, but because it meant I would get to be with you again.
+        <br><br>
+        Thank you for every call, every late-night conversation, every bit of patience, and every effort you've put into us.
+        <br><br>
+        Today I don't have to imagine your smile or hear your voice through a speaker. You're finally here.
+       
+        <br><br>
+        I've missed you more than words can properly explain. ❤️
+      </p>
+    `;
+
     return;
   }
 
